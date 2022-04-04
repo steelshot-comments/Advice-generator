@@ -27,6 +27,7 @@
     article{
       background-color: hsl(217, 19%, 24%);
       width: 520px;
+      max-width: 90vw;
       cursor: pointer;
       border-radius: 16px;
       transition: all .4s ease;
@@ -100,8 +101,10 @@
     <q class="quote">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia.
     </q>
-    <img class="divider" src="./images/pattern-divider-desktop.svg" alt="divider" />
-    
+    <picture class="divider">
+      <source media="(max-width:570px)" srcset="./images/pattern-divider-mobile.svg">
+      <img src="./images/pattern-divider-desktop.svg" alt="divider" />
+    </picture>
   </main>
   <button class="dice">
       <img class="dice-img" src="./images/icon-dice.svg" alt="Generate new advice">
